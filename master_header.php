@@ -127,6 +127,11 @@ function quoteattr(s, preserveCR) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">Github Powered Forums</a>
+
+            <form class="navbar-form navbar-left"> <div class="form-group">
+                <a class='btn btn-default' href="https://github.com/emeth-/Github-Powered-Forum" target="_blank">Source Code</a>
+            </div>
+        </form>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -135,7 +140,7 @@ function quoteattr(s, preserveCR) {
                 if(!isset($_SESSION['github_access_token']) || !$_SESSION['github_access_token']) {
             ?>
             <form class="navbar-form navbar-left"> <div class="form-group">
-                <a class='btn btn-default' href="https://github.com/login/oauth/authorize?scope=user:email&client_id=<?=$client_id?>">Login with Github</a>
+                <a class='btn btn-info' href="https://github.com/login/oauth/authorize?scope=user:email&client_id=<?=$client_id?>">Login with Github</a>
             </div>
         </form>
 
