@@ -29,6 +29,7 @@ New posts/threads/reactions require the [public_repo permission](https://develop
 - github_labels_on_repo_database = <a JSON list string of all valid labels for your org. On my [example repo](https://github.com/emeth-/Github-Powered-Forum-Demo), the value here is ["General Discussion","Questions & Answers","Tutorials & Guides","Suggestions","Bugs"]>
 
 Click here to automatically deploy it to Heroku (though you'll still need to update the environmental variables):
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## How to add an additional forum post-installation?
@@ -37,4 +38,3 @@ Click here to automatically deploy it to Heroku (though you'll still need to upd
 
 # TODO:
 - Catch rate-limit message for unauthenticated api and display note requiring user to login.
-- Add 'view on github' on our master header in this demo.
