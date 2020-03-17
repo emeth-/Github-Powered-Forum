@@ -1,0 +1,17 @@
+{
+  "env": {
+    "github_client_id": "cccc5555c5cccc5cc5cc",
+    "github_client_secret": "cccc5555c5cccc5cc5cccccc5555c5cccc5cc5cc",
+    "github_repo_database": "emeth-/Github-Powered-Forum-Demo",
+    "github_labels_on_repo_database": "[\"General Discussion\",\"Questions & Answers\",\"Tutorials & Guides\",\"Suggestions\",\"Bugs\"]"
+  },
+  "addons": [
+    "papertrail"
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
