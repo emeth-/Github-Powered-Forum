@@ -38,3 +38,4 @@ Click here to automatically deploy it to Heroku (though you'll still need to upd
 
 # TODO:
 - Catch rate-limit message for unauthenticated api and display note requiring user to login.
+- Add concept of being able to "sticky" a thread (perhaps using a new label?)
