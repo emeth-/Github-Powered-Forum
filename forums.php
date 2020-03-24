@@ -1,6 +1,9 @@
 <?php
 include("forums_config.php");
-$forum = urldecode($_GET['forum']);
+$forum = "";
+if(isset($_GET['forum']) && $_GET['forum']) {
+    $forum = urldecode($_GET['forum']);
+}
 
 if (!in_array($forum, $labels_on_repo_database)) {
     $forum = "";
@@ -14,7 +17,10 @@ include("master_header.php");
     <script>
 <?php
 
-$current_page = intval($_GET['page']);
+$current_page = 1;
+if(isset($_GET['page']) && $_GET['page']) {
+    $current_page = intval($_GET['page']);
+}
 if(!$current_page) {
     $current_page = 1;
 }
@@ -383,7 +389,7 @@ $(document).ready(function() {
             <?php
             }
 
-            if($_GET['search']) {
+            if(isset($_GET['search']) && $_GET['search']) {
             ?>
             &gt; Search
             <?php
@@ -407,7 +413,7 @@ $(document).ready(function() {
             <div class="input-group">
 
 
-                <input class="form-control" type="text" placeholder='Search Query...' id='search_query' value="<?=htmlentities($_GET['search'])?>">
+                <input class="form-control" type="text" placeholder='Search Query...' id='search_query' value="<?=(isset($_GET['search']) ? htmlentities($_GET['search']) : '')?>">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button" onclick='submit_search()' id='search_button' style='border: 1px solid #444;'>Search</button>
                 </span>
