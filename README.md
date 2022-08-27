@@ -1,6 +1,6 @@
 # Github-Powered-Forum
 
-Demo: http://githubpoweredforums.herokuapp.com/
+Demo: [Disabled]
 
 Demo's Github Database Repo: https://github.com/emeth-/Github-Powered-Forum-Demo
 
